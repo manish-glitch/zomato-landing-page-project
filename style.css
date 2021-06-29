@@ -12,7 +12,7 @@ body{
 .container{
   max-width: 100%;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .button__primary{
@@ -73,16 +73,20 @@ body{
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0,  0, 0, 0.25);
   position: absolute;
+  z-index: 2;
+  left: auto;
+  right: auto;
 }
 
 .hero__image__back{
-  position: absolute;
-
+  margin: 20px;
+  right:2;
 }
 
 
 .hero__text{
   font-size: 30px;
+  
   margin:20px 0px ;
 }
 
@@ -96,11 +100,15 @@ body{
     padding: 2px 30px;
   }
   .hero__container{
+    
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0;
+   
   }
+  
+
 }
 
 @media (min-width:1020px) {
@@ -121,7 +129,14 @@ body{
     width: 100%;
   }
   .hero__text{
-    font-size: 50px;
+    font-size: 45px;
+    
+  }
+}
+
+@media(min-width: 1400px){
+  .container{
+    max-width: 1250px;
   }
 }
 
